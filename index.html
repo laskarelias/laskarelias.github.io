@@ -102,6 +102,20 @@
       display: flex;
       flex-wrap: wrap;
     }
+    .card-scale {
+      display: flex;
+      justify-content: center;
+      transform-origin: top center;
+      transform: scale(calc(100vw / 900));
+}
+    @media (max-width: 700px) {
+      .info-container {
+        flex-direction: column;
+      }
+      .card-scale {
+        transform: scale(0.8);
+      }
+    }
     .info-left {
       flex: 1;
       font-size: 24px;
@@ -119,22 +133,24 @@
 </head>
   <body>
   <div class="main">
-    <div class="card">
-      <img src="paperclip.png" alt="Paperclip" class="paperclip"/>
-      <div class="card-container">
-        <div class="card-left">
-          <img src="avatar.png" alt="Profile Picture"/>
-        </div>
-        <div class="card-right">
-          <h1>Vaios Laskarelias</h1>
-          <h3><strong>Compiler / Embedded SWE</h3>
-          <br>
-          <p>RISC-V - TriCore</p>
-          <br>
-          <p>Embedded C - Compilers - Libraries</p>
-          <br>
-          <p>Email: <a href="mailto:vaios.lask@gmail.com">vaios.lask@gmail.com</a></p>
-          <p>Website: <a href="https://github.com/laskarelias" target="_blank">github.com/laskarelias</a></p>
+    <div class="card-scale">
+      <div class="card">
+        <img src="paperclip.png" alt="Paperclip" class="paperclip"/>
+        <div class="card-container">
+          <div class="card-left">
+            <img src="avatar.png" alt="Profile Picture"/>
+          </div>
+          <div class="card-right">
+            <h1>Vaios Laskarelias</h1>
+            <h3><strong>Compiler / Embedded SWE</h3>
+            <br>
+            <p>RISC-V - TriCore</p>
+            <br>
+            <p>Embedded C - Compilers - Libraries</p>
+            <br>
+            <p>Email: <a href="mailto:vaios.lask@gmail.com">vaios.lask@gmail.com</a></p>
+            <p>Website: <a href="https://github.com/laskarelias" target="_blank">github.com/laskarelias</a></p>
+          </div>
         </div>
       </div>
     </div>
@@ -193,7 +209,7 @@
           <p class="date">1998<br>future</p>
         </div>
         <div class="info-right">
-          <p>Generally interested in technology and electronics. I like spending my time playing around with Linux, tinkering with electronics, 3D printing, designing and creating custom keyboards. I'm also a car enthusiast and currently trying to develop custom interior parts for my car.</p>
+          <p>Generally interested in technology, electronics, mechanical engineering. I like spending my time playing around with Linux, tinkering with electronics, 3D printing, designing and creating various devices, designing and creating custom interior and exterior parts for my car.</p>
         </div>
       </div>
     </div>
